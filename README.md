@@ -24,7 +24,7 @@ Run with binding local data file directory. Bind `/path-to-path/api` (Host) to `
 Listening port of Aeromock is 3183. Do port mapping 3183(Optional) to 3183.
 
 ```
-$ docker run -t -i 3183:3183 -v /path-to-path/api:/project/api stormcat24/aeromock-api
+$ docker run -t -i -p 3183:3183 -v /path-to-path/api:/project/api stormcat24/aeromock-api
 ```
 
 ## Request
