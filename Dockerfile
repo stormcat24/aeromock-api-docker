@@ -10,7 +10,7 @@ RUN yum install -y java-1.7.0-openjdk
 # aeromock-brew
 RUN git clone https://github.com/CyberAgent/aeromock-brew.git
 RUN cd aeromock-brew && \
-    ./gradlew use -PaeromockVersion=latest
+    ./gradlew use -PaeromockVersion=0.2.3
 
 # aeromock
 ADD config.yaml /root/.aeromock/config.yaml
